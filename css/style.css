@@ -1,0 +1,52 @@
+/* ==============reset============= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==============header=============== */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("/images/banner-mobile.jpg");
+  background-color: #000;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.logo_svg {
+  width: 300px;
+}
+
+.menu_list {
+  display: none;
+}
+
+.header_title {
+  width: 300px;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
