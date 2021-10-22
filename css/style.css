@@ -36,13 +36,34 @@
   z-index: -1;
 }
 
+.menu_dropdown {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("/svg/form-circle.svg");
+
+  position: absolute;
+  top: 4%;
+  right: 3%;
+}
+
+.menu_span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 .logo_svg {
   width: 300px;
 }
 
-.menu_list {
+/* .dropdown {
   display: none;
-}
+} */
 
 .header_title {
   width: 300px;
