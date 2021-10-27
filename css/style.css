@@ -107,15 +107,65 @@
 
 /* ================================MAIN================================ */
 
-/* ============================POST-CARDS============================== */
-
-.main {
+/* .main {
   width: 1200px;
   padding: 0 15px;
   margin: 64px auto;
   display: flex;
   justify-content: space-between;
+} */
+
+/* ===========================TRANDS============================ */
+
+.trands_title {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  padding-bottom: 13px;
+  margin-top: 60px;
+  margin-bottom: 45px;
 }
+
+.trands_title::after {
+  content: "";
+  position: absolute;
+  background: #b59f5b;
+  height: 3px;
+  width: 32px;
+  opacity: 0.4;
+  display: block;
+  left: 50%;
+  bottom: 0;
+}
+
+.trands_title::before {
+  content: "";
+  position: absolute;
+  background: #b59f5b;
+  height: 3px;
+  width: 32px;
+  opacity: 0.4;
+  display: block;
+  right: 50%;
+  bottom: 0;
+}
+
+.trands_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.trand_photo {
+  width: 410px;
+}
+
+/* ============================POST-CARDS============================== */
 
 .post-cards {
   margin-right: 120px;
