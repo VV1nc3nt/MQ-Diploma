@@ -671,6 +671,11 @@
   margin-bottom: 25px;
 }
 
+.description_link {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
 .price_container {
   display: flex;
   flex-direction: column;
@@ -682,6 +687,39 @@
   align-items: flex-end;
 }
 
+.shop_price {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  color: #0f0d0e;
+}
+
+.real_price {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+
+.shop_button {
+  padding: 20px 25px;
+  background-color: #b59f5b;
+  text-decoration: none;
+}
+
+.button_text {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
 /* ================================FOOTER============================== */
 
 .socials {
