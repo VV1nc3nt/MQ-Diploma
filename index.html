@@ -9,6 +9,37 @@
   <link rel="shortcut icon" href="./svg/noemi-logo.svg" type="image/x-icon">
 </head>
 <body>
+  <section class="popup__hidden">
+    <div class="popup_title">
+      <h2 class="popup_title_text">ваш фидбек</h2>
+    </div>
+    <form class="popup_form">
+      <div class="select_form">
+        <label for="select" class="select_label">Как часто вы заходите на сайт?
+          <select name="" id="select" class="select_block" required>
+            <option value="" class="select_option" selected>Почти каждый день</option>
+            <option value="" class="select_option">Раз в несколько дней</option>
+            <option value="" class="select_option">Раз в несколько недель</option>
+            <option value="" class="select_option">Несколько раз в год</option>
+          </select>
+        </label>
+      </div>
+      <div class="radio_form">
+        <p class="radio_title">Вы подписаны на e-mail рассылку?</p>
+        <input type="radio" name="radio" value="yes">
+        <label for="" class="radio_label">Да</label>
+        <input type="radio" name="radio" value="no">
+        <label for="" class="radio_label">Нет</label>
+      </div>
+      <div class="input_form">
+        <label for="input" class="input_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+        <input id="input" type="text" placeholder="Может, больше рецептов?" required>
+      </div>
+      <button href="" class="form_button">
+        <span class="form_btn_text">отправить</span>
+      </button>
+    </form>
+  </section>
   <header class="header">
     <div class="header-container">
       <a href="#0" class="logo-link"><img src="./svg/noemi-logo.svg" alt="logo" class="header-logo"></a>
