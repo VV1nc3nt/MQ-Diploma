@@ -9,36 +9,47 @@
   <link rel="shortcut icon" href="./svg/noemi-logo.svg" type="image/x-icon">
 </head>
 <body>
-  <section class="popup__hidden">
-    <div class="popup_title">
-      <h2 class="popup_title_text">ваш фидбек</h2>
+  <section class="popup__hidden" id="popup">
+    <div class="popup_container">
+      <div class="popup_title">
+        <h2 class="popup_title_text">ваш фидбек</h2>
+      </div>
+      <form class="popup_form">
+        <div class="select_form form_block">
+          <label for="select" class="select_label">Как часто вы заходите на сайт?
+            <select name="" id="select" class="select_block form_input" required>
+              <option value="" class="select_option" selected>Почти каждый день</option>
+              <option value="" class="select_option">Раз в несколько дней</option>
+              <option value="" class="select_option">Раз в несколько недель</option>
+              <option value="" class="select_option">Несколько раз в год</option>
+            </select>
+          </label>
+        </div>
+        <div class="radio_form form_block">
+          <p class="radio_title">Вы подписаны на e-mail рассылку?</p>
+          <label class="radio_group">
+            <input class="radio" type="radio" name="radio-group">
+            <span class="radio_hint">Да</span>
+          </label>
+          <label class="radio_group">
+            <input class="radio" type="radio" name="radio-group">
+            <span class="radio_hint">Нет</span>
+          </label>
+        </div>
+        <div class="textarea_form form_block">
+          <label for="input" class="input_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+          <textarea class="textarea form_input" id="input" type="text" placeholder="Может, больше рецептов?" required></textarea>
+        </div>
+        <button href="#0" class="form_button">
+          <span class="form_btn_text">отправить</span>
+        </button>
+      </form>
+      <div class="popup_close">
+        <span class="close">
+          <img src="./svg/form-x.svg" alt="" class="close_btn" id="close">
+        </span>
+      </div>
     </div>
-    <form class="popup_form">
-      <div class="select_form">
-        <label for="select" class="select_label">Как часто вы заходите на сайт?
-          <select name="" id="select" class="select_block" required>
-            <option value="" class="select_option" selected>Почти каждый день</option>
-            <option value="" class="select_option">Раз в несколько дней</option>
-            <option value="" class="select_option">Раз в несколько недель</option>
-            <option value="" class="select_option">Несколько раз в год</option>
-          </select>
-        </label>
-      </div>
-      <div class="radio_form">
-        <p class="radio_title">Вы подписаны на e-mail рассылку?</p>
-        <input type="radio" name="radio" value="yes">
-        <label for="" class="radio_label">Да</label>
-        <input type="radio" name="radio" value="no">
-        <label for="" class="radio_label">Нет</label>
-      </div>
-      <div class="input_form">
-        <label for="input" class="input_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-        <input id="input" type="text" placeholder="Может, больше рецептов?" required>
-      </div>
-      <button href="" class="form_button">
-        <span class="form_btn_text">отправить</span>
-      </button>
-    </form>
   </section>
   <header class="header">
     <div class="header-container">
@@ -565,5 +576,6 @@
       </a>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>
