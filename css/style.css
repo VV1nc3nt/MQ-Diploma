@@ -39,17 +39,16 @@
   overflow: auto;
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.6);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup_container {
   position: sticky;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -15%);
   z-index: 5;
   background-color: #fff;
-  width: 25vw;
+  padding: 50px 30px;
   min-height: 590px;
 }
 
@@ -63,23 +62,20 @@
   color: #000000;
   position: relative;
   padding-bottom: 13px;
-  padding-top: 50px;
   margin-bottom: 30px;
 }
 
 .popup_title::after {
   content: "";
-  position: absolute;
+  margin: 15px auto 0;
   background: #b59f5b;
   height: 3px;
-  width: 32px;
+  width: 64px;
   opacity: 0.4;
   display: block;
-  left: 50%;
-  bottom: 0;
 }
 
-.popup_title::before {
+/* .popup_title::before {
   content: "";
   position: absolute;
   background: #b59f5b;
@@ -89,7 +85,7 @@
   display: block;
   right: 50%;
   bottom: 0;
-}
+} */
 
 .popup_form {
   width: 23vw;
@@ -285,7 +281,6 @@
 
 .menu-link:hover {
   text-decoration: underline;
-  text-shadow: 1px 1px 2px #d3d5d4;
 }
 
 /* ================================PAGE================================ */
@@ -367,7 +362,7 @@
 }
 
 .trands-link:hover {
-  text-shadow: 1px 1px 1px #fff;
+  color: #b59f5b;
 }
 
 .trands_title {
@@ -386,26 +381,12 @@
 
 .trands_title::after {
   content: "";
-  position: absolute;
+  margin: 15px auto 0;
   background: #b59f5b;
   height: 3px;
-  width: 32px;
+  width: 64px;
   opacity: 0.4;
   display: block;
-  left: 50%;
-  bottom: 0;
-}
-
-.trands_title::before {
-  content: "";
-  position: absolute;
-  background: #b59f5b;
-  height: 3px;
-  width: 32px;
-  opacity: 0.4;
-  display: block;
-  right: 50%;
-  bottom: 0;
 }
 
 /* ============================POST-CARDS============================== */
@@ -447,7 +428,7 @@
 }
 
 .title-link:hover {
-  text-shadow: 0.5px 0.5px 0.5px #2B2020;
+  color: #b59f5b;
 }
 
 .categories-list {
@@ -474,7 +455,6 @@
 
 .category-link:hover {
   text-decoration: underline;
-  text-shadow: 0.5px 0.5px 0.5px #b59f5b;
 }
 
 .card-date-author {
@@ -533,26 +513,12 @@
 
 .sidebar-title::after {
   content: "";
-  position: absolute;
+  margin: 15px auto 0;
   background: #b59f5b;
   height: 3px;
-  width: 32px;
+  width: 64px;
   opacity: 0.4;
   display: block;
-  left: 50%;
-  bottom: 0;
-}
-
-.sidebar-title::before {
-  content: "";
-  position: absolute;
-  background: #b59f5b;
-  height: 3px;
-  width: 32px;
-  opacity: 0.4;
-  display: block;
-  right: 50%;
-  bottom: 0;
 }
 
 .sidebar-posts-list {
@@ -593,10 +559,6 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-}
-
-.post-link:hover {
-  text-shadow: 0.5px 0.5px 0.5px #2B2020;
 }
 
 .search-form {
@@ -728,8 +690,8 @@
   padding: 4px 12px;
 }
 
-.tags-link:hover {
-  text-shadow: 0.5px 0.5px 0.5px #2B2020;
+.tags-list-item:hover {
+  border: 3px solid #b59f5b;
 }
 
 .post-themes {
@@ -745,6 +707,7 @@
 .themes-list-item {
   border-bottom: 1px solid #eeeeee;
   position: relative;
+  padding: 20px 0 12px 0;
 }
 
 .themes-link {
@@ -755,11 +718,11 @@
   line-height: normal;
   color: #000000;
   text-decoration: none;
-  margin: 20px 5px 12px 0;
+  margin-right: 5px;
 }
 
 .themes-link:hover {
-  text-shadow: 0.5px 0.5px 0.5px #2B2020;
+  color: #b59f5b;
 }
 
 .themes-amount {
@@ -769,8 +732,7 @@
   font-size: 12px;
   line-height: normal;
   color: #b59f5b;
-  position: absolute;
-  top: 17px;
+  vertical-align: super;
 }
 
 /* ===========================SHOP================================ */
@@ -788,22 +750,22 @@
 }
 
 .shop_card {
-  border: 4px solid rgba(197, 155, 71, 0.4);
   padding: 20px 15px 30px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
 }
 
-.shop_img {
+/* .shop_img {
   min-height: 200px;
   max-width: 300px;
-}
+} */
 
 .inside_container {
   display: flex;
   flex-direction: column;
   max-width: 300px;
+  border: 4px solid rgba(197, 155, 71, 0.4);
 }
 
 .shop_title {
@@ -821,26 +783,27 @@
 
 .shop_title::after {
   content: "";
-  position: absolute;
+  margin: 15px auto 0;
   background: #b59f5b;
   height: 3px;
-  width: 32px;
+  width: 64px;
   opacity: 0.4;
   display: block;
-  left: 50%;
-  bottom: 0;
 }
 
-.shop_title::before {
-  content: "";
-  position: absolute;
-  background: #b59f5b;
-  height: 3px;
-  width: 32px;
-  opacity: 0.4;
-  display: block;
-  right: 50%;
-  bottom: 0;
+.shop_img1 {
+  background-image: url("../images/shop-item-desk1.jpg");
+  background-repeat: no-repeat;
+}
+
+.shop_img2 {
+  background-image: url("../images/shop-item-desk2.jpg");
+  background-repeat: no-repeat;
+}
+
+.shop_img3 {
+  background-image: url("../images/shop-item-desk3.jpg");
+  background-repeat: no-repeat;
 }
 
 .shop_item {
@@ -931,8 +894,11 @@
 
 .socials-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  max-width: 225px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .socials-list-item {
@@ -998,14 +964,6 @@
 
 @media (min-width: 641px) and (max-width: 1200px) {
 
-  .popup_container {
-    top:75%;
-    left:50%;
-    transform: translate(-50%, -15%);
-    width: 50vw;
-    min-height: 590px;
-  }
-
   .popup_form {
     width: 45vw;
   }
@@ -1037,6 +995,9 @@
 
   .header-title {
     width: 90vw;
+  }
+
+  .header_title_text {
     font-size: 40px;
   }
 
@@ -1099,19 +1060,12 @@
 
 @media (max-width: 640px) {
 
-  .popup_container {
-    top:20%;
-    left:10%;
-    transform: translate(-5%, -15%);
-    width: 90vw;
-  }
-
   .popup_form {
-    width: 80vw;
+    width: 100%;
   }
 
   .form_button {
-    width: 80vw;
+    width: 100%;
   }
 
   .form_button:hover {
@@ -1123,12 +1077,12 @@
   }
 
   .select_block {
-    width: 80vw;
+    width: 100%;
   }
 
 
   .textarea {
-    width: 80vw;
+    width: 100%;
     height: 130px;
   }
 
@@ -1146,7 +1100,7 @@
   .header-container {
     width: 90vw;
     justify-content: space-around;
-    margin-top: 50%;
+    margin-top: 60%;
     margin-bottom: 40px;
   }
 
@@ -1156,9 +1110,13 @@
 
   .header-title {
     width: 90vw;
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .header_title_text {
     font-size: 26px;
     line-height: 36px;
-    padding: 0;
   }
 
   .menu {
