@@ -1047,6 +1047,10 @@
     justify-content: space-around;
   }
 
+  .inside_container {
+    margin-top: 180px;
+  }
+
   .shop_img1 {
     background-image: url("../images/shop-item-tablet1.jpg");
   }
@@ -1196,6 +1200,10 @@
   .shop_container {
     justify-content: center;
     align-items: center;
+  }
+
+  .inside_container {
+    margin-top: 230px;
   }
 
   .shop_img1 {
