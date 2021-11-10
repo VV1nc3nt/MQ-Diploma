@@ -16,8 +16,10 @@
       </div>
       <form class="popup_form">
         <div class="select_form form_block">
-          <label for="select" class="select_label">Как часто вы заходите на сайт?
-            <select name="" id="select" class="select_block form_input" required>
+          <p>Как часто вы заходите на сайт?</p>
+          <label class="select_label">
+            <span class="form_description">Select form</span>
+            <select class="select_block form_input" required>
               <option value="" class="select_option" selected>Почти каждый день</option>
               <option value="" class="select_option">Раз в несколько дней</option>
               <option value="" class="select_option">Раз в несколько недель</option>
@@ -28,17 +30,22 @@
         <div class="radio_form form_block">
           <p class="radio_title">Вы подписаны на e-mail рассылку?</p>
           <label class="radio_group">
+            <span class="form_description">Radio form</span>
             <input class="radio" type="radio" name="radio-group">
             <span class="radio_hint">Да</span>
           </label>
           <label class="radio_group">
+            <span class="form_description">Radio form</span>
             <input class="radio" type="radio" name="radio-group">
             <span class="radio_hint">Нет</span>
           </label>
         </div>
         <div class="textarea_form form_block">
-          <label for="input" class="input_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-          <textarea class="textarea form_input" id="input" type="text" placeholder="Может, больше рецептов?" required></textarea>
+          <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+          <label class="input_label">
+            <span class="form_description">Textarea form</span>
+            <textarea class="textarea form_input" type="text" placeholder="Может, больше рецептов?" required></textarea>
+          </label>
         </div>
         <button href="#0" class="form_button">
           <span class="form_btn_text">отправить</span>
@@ -479,7 +486,6 @@
       </div>
       <div class="shop_container">
         <article class="shop_card shop_img1">
-          <!-- <img src="./images/shop-item-desk1.jpg" alt="Pillow's for sofa" class="shop_img"> -->
           <div class="inside_container">
             <h3 class="shop_item">подушки на диван</h3>
             <div class="description_container">
@@ -499,11 +505,10 @@
           </div>
         </article>
         <article class="shop_card shop_img2">
-          <!-- <img src="./images/shop-item-desk2.jpg" alt="Doll Rabbit" class="shop_img"> -->
-          <h3 class="shop_item">кукла "зайчик"</h3>
           <div class="inside_container">
+            <h3 class="shop_item">кукла "зайчик"</h3>
             <div class="description_container">
-              <p class="shop_decrtiption">Интерьерная рукодельная кукла "Зачик", созданию которой посвящена <a href="#0" class="description_link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+              <p class="shop_decrtiption">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="#0" class="description_link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
             </div>
             <div class="price_add">
               <div class="price_container">
@@ -518,9 +523,8 @@
           </div>
         </article>
         <article class="shop_card shop_img3">
-          <!-- <img src="./images/shop-item-desk3.jpg" alt="Hexagonal frame" class="shop_img"> -->
-          <h3 class="shop_item">шестиугольная рамка</h3>
           <div class="inside_container">
+            <h3 class="shop_item">шестиугольная рамка</h3>
             <div class="description_container">
               <p class="shop_decrtiption">Необычная рамка для украшения дома из видео <a href="#0" class="description_link">"Как сделать рамку из подручных средств за 30 минут"</a></p>
             </div>
@@ -579,8 +583,3 @@
   <script src="./js/script.js"></script>
 </body>
 </html>
-
-
-<!-- Правый текстовый блок в статье сплюснут https://cln.sh/KpJoA4 сверьтесь, пожалуйста, с макетом
-Поля ввода в формах оборачиваем в лейбл и кладём рядом скрытое описание для скринридера. Как в иконках соц.сетей. Заголовок в форме подписки выносим за пределы лейбла.
-Рамка не должна быть вокруг всей карточки товара https://cln.sh/n9qMnU-->
