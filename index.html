@@ -18,7 +18,7 @@
         <div class="select_form form_block">
           <p>Как часто вы заходите на сайт?</p>
           <label class="select_label">
-            <span class="form_description">Select form</span>
+            <span class="form_description">Как часто вы заходите на сайт?</span>
             <select class="select_block form_input" required>
               <option value="" class="select_option" selected>Почти каждый день</option>
               <option value="" class="select_option">Раз в несколько дней</option>
@@ -30,7 +30,7 @@
         <div class="radio_form form_block">
           <p class="radio_title">Вы подписаны на e-mail рассылку?</p>
           <label class="radio_group">
-            <span class="form_description">Radio form</span>
+            <span class="form_description">Вы подписаны на e-mail рассылку?</span>
             <input class="radio" type="radio" name="radio-group">
             <span class="radio_hint">Да</span>
           </label>
@@ -43,7 +43,7 @@
         <div class="textarea_form form_block">
           <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
           <label class="input_label">
-            <span class="form_description">Textarea form</span>
+            <span class="form_description">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
             <textarea class="textarea form_input" type="text" placeholder="Может, больше рецептов?" required></textarea>
           </label>
         </div>
@@ -52,9 +52,8 @@
         </button>
       </form>
       <div class="popup_close">
-        <button class="close">
-          <img src="./svg/form-x.svg" alt="Close button" class="close_btn" id="close">
-        </button>
+        <button class="close">Закрыть</button>
+        <img src="./svg/form-x.svg" alt="Close button" class="close_btn" id="close">
       </div>
     </div>
   </section>
@@ -406,10 +405,11 @@
           </button>
         </form>
         <form class="distribution-form">
+          <div class="sidebar-title">
+            <h4>рассылка</h4>
+          </div>
           <label>
-            <div class="sidebar-title">
-              <h4>рассылка</h4>
-            </div>
+            <span class="form_description">Расслыка</span>
             <input type="email" name="email-field" placeholder="Ваш email-адрес" class="email-field" required>
           </label>
           <button class="distribution-button">
@@ -485,7 +485,13 @@
         <h2 class="shop_header">наши изделия</h2>
       </div>
       <div class="shop_container">
-        <article class="shop_card shop_img1">
+        <article class="shop_card">
+          <picture class="shop_picture">
+            <source media="(min-width: 1201px)" srcset="./images/shop-item-desk1.jpg">
+            <source media="(min-width: 641px) and (max-width: 1200px)" srcset="./images/shop-item-tablet1.jpg">
+            <source media="(max-width: 640px)" srcset="./images/shop-item-mobile1.jpg">
+            <img src="./images/shop-item-desk1.jpg" alt="Beautiful pillow">
+          </picture>
           <div class="inside_container">
             <h3 class="shop_item">подушки на диван</h3>
             <div class="description_container">
@@ -504,7 +510,13 @@
             </div>
           </div>
         </article>
-        <article class="shop_card shop_img2">
+        <article class="shop_card">
+          <picture class="shop_picture">
+            <source media="(min-width: 1201px)" srcset="./images/shop-item-desk2.jpg">
+            <source media="(min-width: 641px) and (max-width: 1200px)" srcset="./images/shop-item-tablet2.jpg">
+            <source media="(max-width: 640px)" srcset="./images/shop-item-mobile2.jpg">
+            <img src="./images/shop-item-desk2.jpg" alt="Beautiful rabbit">
+          </picture>
           <div class="inside_container">
             <h3 class="shop_item">кукла "зайчик"</h3>
             <div class="description_container">
@@ -522,7 +534,13 @@
             </div>
           </div>
         </article>
-        <article class="shop_card shop_img3">
+        <article class="shop_card">
+          <picture class="shop_picture">
+            <source media="(min-width: 1201px)" srcset="./images/shop-item-desk3.jpg">
+            <source media="(min-width: 641px) and (max-width: 1200px)" srcset="./images/shop-item-tablet3.jpg">
+            <source media="(max-width: 640px)" srcset="./images/shop-item-mobile3.jpg">
+            <img src="./images/shop-item-desk3.jpg" alt="Hexagonal frame">
+          </picture>
           <div class="inside_container">
             <h3 class="shop_item">шестиугольная рамка</h3>
             <div class="description_container">
